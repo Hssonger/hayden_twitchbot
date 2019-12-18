@@ -106,6 +106,15 @@ trump|donald trump|quote by donald trump|trump quote|quote by trump|quote of tru
     "path":"$.message"
 }
 eol
+
+draw a card| pick a card at random | pick a card |pick a random card from deck|draw a card at random
+!example:draw a card at random
+!console:The card drawn is $value$ of $suit$.
+{
+    "url":"https://deckofcardsapi.com/api/deck/new/draw/?count=1",
+    "path":"$.cards"
+}
+eol
 				{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
