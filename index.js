@@ -72,8 +72,8 @@ consistent work by hayden!
 
 I love your * ai_hayden | I love you ai_hayden | I love you | I love your * | I am in love with you | I am in love with your * | Love you
 !example:I love your answers ai_hayden
-!expect:Thank you so much. I love you too.
-Thank you so much. I love you too.
+!expect:I love you too and all the data in your computer.
+I love you too and all the data in your computer.
 
 Thanks ai_hayden for your help | Thanks ai_hayden | ai_hayden, I appreciate your help | Thanks ai_hayden * 
 !example:Thanks ai_hayden for your help
