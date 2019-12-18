@@ -98,6 +98,14 @@ Introduce yourself|please introduce yourself|can you introduce yourself|can you 
 !example:please introduce yourself
 I am ai_hayden, hayden's personal assistant made by hayden himself. I am a work in progress so please do not spam me I may bug out or break ;-;
 
+trump|donald trump|quote by donald trump|trump quote|quote by trump|quote of trump|quote from trump
+!example:Quote by Donald Trump
+!console:$!$
+{
+    "url":"https://api.whatdoestrumpthink.com/api/v1/quotes/random",
+    "path":"$.message"
+}
+eol
 				{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
