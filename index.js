@@ -119,14 +119,12 @@ eol
 Toss a dice| Toss a die| Roll a dice| Roll a die| 
 !example:Roll a die
 1| 2| 3| 4| 5| 6
-			
-Random number from * to *
-!example:Random number from 10 to 20
-!expect:17
-!javascript:$!$
-Math.floor(Math.random() * ($2$-$1$+1))+$1$;
-eol
-				{
+
+!expect:I am glad I could be of help to you.
+!expect:I am glad I could be of help to you.
+!expect:I am glad I could be of help to you.
+!expect:I am 
+			{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
 				}
