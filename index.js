@@ -40,8 +40,64 @@ client.on('chat', function(channel, userstate, message, self){
 			// Setting options to make a successful call to SUSI API
 			var options1 = {
 				method: 'GET',
-				url: 'http://api.susi.ai/susi/chat.json',
-				qs:
+				
+
+What is your name ? | What's your name ? |Who are you ?|What should I call you? |Do you have a name |I want to know you|Who are you?| Yours name?  | Tell yours name 
+!example:Do you have a name
+!expect:Hi! My name is ai_hayden!
+Hi! My name is ai_hayden!
+
+Where do you belong? | Where are you from | Where do you live
+!example:Where do you belong?
+!expect:If I tell you, I'll have to kill you.
+If I tell you, I'll have to kill you. | That'll be a secret. :D
+
+ai_hayden
+!example:ai_hayden
+!expect:best ai (ai_hayden) at your service.
+best ai (ai_hayden) at your service.
+
+Are you ai_hayden
+!example:Are you ai_hayden
+!expect:Yes, world's best ai (ai_hayden) to be exact.
+Yes, world's best ai (ai_hayden) to be exact.
+
+* fuck you | * fuck off | Fuck you | Fuck off | * bitch | Bitch
+Please don't talk to me like that. | Do you really think I deserve that!
+
+* how are you made | * what made you | How are you made | What made you
+!example:Can you tell me what made you
+!expect:consistent work by hayden!
+consistent work by hayden!
+
+I love your * ai_hayden | I love you ai_hayden | I love you | I love your * | I am in love with you | I am in love with your * | Love you
+!example:I love your answers ai_hayden
+!expect:Thank you so much. I love you too.
+Thank you so much. I love you too.
+
+Thanks ai_hayden for your help | Thanks ai_hayden | ai_hayden, I appreciate your help | Thanks ai_hayden * 
+!example:Thanks ai_hayden for your help
+!expect:I am glad I could be of help to you.
+I am glad I could be of help to you.
+
+Suggest an anime| Suggest me an anime| ai_hayden suggest anime| ai_hayden suggest me an anime| Recommend anime| Give anime recommendations| Give anime suggestions
+!example:Suggest an anime
+Boku no Hero Academia| One piece| Naruto Shippuden| Fairy Tail| Haikyuu!| Kuroko no Basuke| Nanatsu no Taizai| Shokugeki no Souma| Shigatsu wa Kimi no Uso | Dragon Ball Z
+
+distance between * and *|What is distance between * and * ?|What is the distance between * and * ?| What is distance between * and *|do you know distance between * and *?|do you know the distance between * and *|Tell me the distance between * and *?|Tell me distance between * and *?|can you tell me the distance between * and *?|can you tell me distance between * and *?
+!example:distance between india and singapore
+!expect:india is 3572 km (kilometers) away from singapore
+!console: $1$ is $plaintext$ away from $2$
+{ 
+    "url": "https://api.wolframalpha.com/v2/query?input=distance+between+$1$+and+$2$&output=JSON&appid=9WA6XR-26EWTGEVTE&includepodid=Result",  
+    "path" : "$.queryresult.pods[0].subpods[0]"
+}
+eol
+
+Introduce yourself|please introduce yourself|can you introduce yourself|can you please introduce yourself|introduction please
+!example:please introduce yourself
+I am ai_hayden, hayden's personal assistant made by hayden himself. I am a work in progress so please do not spam me I may bug out or break ;-;
+
 				{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
@@ -83,7 +139,7 @@ client.on('chat', function(channel, userstate, message, self){
 });
 
 client.on('connected', function(address, port){
-	client.action(userChannel, `Hi, I'm ai_hayden. Mention me using @${process.env.USERNAME} to chat with me.`);
+	client.action(userChannel, `Hi, I was ai_hayden`);
 });
 
 const port = process.env.PORT || 3000;
