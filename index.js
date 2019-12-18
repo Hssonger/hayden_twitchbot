@@ -79,6 +79,11 @@ Thanks ai_hayden for your help | Thanks ai_hayden | ai_hayden, I appreciate your
 !example:Thanks ai_hayden for your help
 !expect:I am glad I could be of help to you.
 I am glad I could be of help to you.
+				
+How am I going to die?| In what way will I die?|
+!example: How am I going to die?
+!expect: Cancer. RIP.
+Cancer. RIP.
 
 Suggest an anime| Suggest me an anime| ai_hayden suggest anime| ai_hayden suggest me an anime| Recommend anime| Give anime recommendations| Give anime suggestions
 !example:Suggest an anime
@@ -120,10 +125,6 @@ Toss a dice| Toss a die| Roll a dice| Roll a die|
 !example:Roll a die
 1| 2| 3| 4| 5| 6
 
-!expect:I am glad I could be of help to you.
-!expect:I am glad I could be of help to you.
-!expect:I am glad I could be of help to you.
-!expect:I am 
 			{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
