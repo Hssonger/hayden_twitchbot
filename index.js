@@ -115,6 +115,10 @@ draw a card| pick a card at random | pick a card |pick a random card from deck|d
     "path":"$.cards"
 }
 eol
+
+Toss a dice| Toss a die| Roll a dice| Roll a die| 
+!example:Roll a die
+1| 2| 3| 4| 5| 6
 				{
 					timezoneOffset: '-300',
 					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
