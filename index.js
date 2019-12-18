@@ -62,6 +62,11 @@ Are you ai_hayden
 !expect:Yes, world's best ai (ai_hayden) to be exact.
 Yes, world's best ai (ai_hayden) to be exact.
 
+are you working?
+!example:are you working?
+!expect: yes I am working perfectly (for now).
+ yes I am working perfectly (for now).
+				
 * fuck you | * fuck off | Fuck you | Fuck off | * bitch | Bitch
 Please don't talk to me like that. | Do you really think I deserve that!
 
