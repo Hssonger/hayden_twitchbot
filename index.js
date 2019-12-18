@@ -171,7 +171,7 @@ Toss a dice| Toss a die| Roll a dice| Roll a die|
 });
 
 client.on('connected', function(address, port){
-	client.action(userChannel, `Hi, I was ai_hayden`);
+	client.action(userChannel, `Hi, my name is ai_hayden haydens personal assistant`);
 });
 
 const port = process.env.PORT || 3000;
