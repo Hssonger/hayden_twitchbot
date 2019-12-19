@@ -57,7 +57,7 @@ client.say(channel, "yes I am working perfectly (for now).")
 
 			{
 					timezoneOffset: '-300',
-					q: u[1].substring((process.env.USERNAME).length + 1, u[1].length)
+					 u[1].substring((process.env.USERNAME).length + 1, u[1].length)
 				}
 			};
 
