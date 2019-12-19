@@ -39,19 +39,19 @@ client.on('chat', function(channel, userstate, message, self){
 			
 				
 if (message == "What is your name ? | What's your name ? |Who are you ?|What should I call you? |Do you have a name |I want to know you|Who are you?| Yours name?  | Tell yours name ") {
-        client.say(channel, "Hi! My name is ai_hayden!")
+        client.say(userChannel, "Hi! My name is ai_hayden!")
 
 if (message == "Where do you belong? | Where are you from | Where do you live")
-client.say(channel, "If I tell you, I'll have to kill you. | That'll be a secret. :D")
+client.say(userChannel, "If I tell you, I'll have to kill you. | That'll be a secret. :D")
 
 if (message == "ai_hayden")
-client.say(channel, "best ai (ai_hayden) at your service.")
+client.say(useChannel, "best ai (ai_hayden) at your service.")
 
 if (message == "are you ai_hayden")
-client.say(channel, "Yes, world's best ai (ai_hayden) to be exact.")
+client.say(userChannel, "Yes, world's best ai (ai_hayden) to be exact.")
 
 if (message == "are you working")
-client.say(channel, "yes I am working perfectly (for now).")
+client.say(userChannel, "yes I am working perfectly (for now).")
 
 				
 
