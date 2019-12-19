@@ -57,7 +57,7 @@ if (message == "are you working") {
 client.say(userChannel, "yes I am working perfectly (for now).") 
 	 }
 
-		});				
+		};				
 
 			{
 					timezoneOffset: '-300',
